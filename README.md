@@ -78,3 +78,4 @@ Data ingestion from CSV to Snowflake:
         if conn:
             conn.close()   
     ```
+    ![Screenshot of a project interface](snowflake_load_1.png)
