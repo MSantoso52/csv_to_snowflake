@@ -1,4 +1,5 @@
 # csv_to_snowflake
+![Screenshot of a project interface](csv_to_snowflake.png)
 # *Overview*
 Project repo to demonstrate data ingestion from CSV file into Snowflake datawarehouse. Data ingestion start with create connection between local machine into Snowflake. 
 # *Prerequisites*
