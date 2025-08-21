@@ -32,11 +32,11 @@ Data ingestion from CSV to Snowflake:
    ```
 5. Create stage to temporary storage before load into Snowflake
    ```python3
-   
+   cursor.execute(f"CREATE STAGE IF NOT EXISTS {stage_name}")
    ```
 7. Load csv file into stage
    ```python3
-   
+   cursor.execute(f"PUT file://{csv_file_path} @{stage_name} AUTO_COMPRESS=TRUE OVERWRITE=TRUE")
    ```
 9. Get column form csv file's header
    ```python3
